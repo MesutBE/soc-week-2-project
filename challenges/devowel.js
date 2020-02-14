@@ -1,15 +1,23 @@
 console.log('devowel script has loaded');
 
 // write this function!
-function devowel() {
+function devowel(text) {
+  let characterArray = text.split("")
+  return characterArray.map(character => {
+    if (/[aeiouAEIOU]/.test(character)) {
+      character = ""
+    } else {
+      return character;
+    }
+  }).join("")
 }
 
 // remove all vowels, lower and upper case!
-console.assert(devowel('alphAbet') === 'lphbt', 'first');
-console.assert(devowel('If it must bE') === 'f t mst b', 'second');
-console.assert(devowel('Over and out') === 'vr nd t', 'third');
-console.assert(devowel('Up!') === 'p!', 'fourth');
-console.assert(devowel('AaEeIiOoUuAaEeIiOoUu') === '', 'fifth');
+console.log(devowel('alphAbet') === 'lphbt', 'first');
+console.log(devowel('If it must bE') === 'f t mst b', 'second');
+console.log(devowel('Over and out') === 'vr nd t', 'third');
+console.log(devowel('Up!') === 'p!', 'fourth');
+console.log(devowel('AaEeIiOoUuAaEeIiOoUu') === '', 'fifth');
 
 
 function devowelHandler() {
