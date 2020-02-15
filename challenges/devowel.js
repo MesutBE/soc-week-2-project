@@ -13,11 +13,11 @@ function devowel(text) {
 }
 
 // remove all vowels, lower and upper case!
-console.log(devowel('alphAbet') === 'lphbt', 'first');
-console.log(devowel('If it must bE') === 'f t mst b', 'second');
-console.log(devowel('Over and out') === 'vr nd t', 'third');
-console.log(devowel('Up!') === 'p!', 'fourth');
-console.log(devowel('AaEeIiOoUuAaEeIiOoUu') === '', 'fifth');
+console.assert(devowel('alphAbet') === 'lphbt', 'first');
+console.assert(devowel('If it must bE') === 'f t mst b', 'second');
+console.assert(devowel('Over and out') === 'vr nd t', 'third');
+console.assert(devowel('Up!') === 'p!', 'fourth');
+console.assert(devowel('AaEeIiOoUuAaEeIiOoUu') === '', 'fifth');
 
 
 function devowelHandler() {
